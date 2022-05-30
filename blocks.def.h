@@ -2,7 +2,7 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
     {"", "/home/mr/bin/statusbar/sb-cputemp",                                                  10,      0},
-    {"", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	                       30,	0},
+    {"RAM", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	                       30,	0},
     {"", "/home/mr/bin/statusbar/sb-diskspace",                                                0,       0},
     {"", "/home/mr/bin/statusbar/sb-ip",                                                       300,     0},
     {"", "/home/mr/bin/statusbar/sb-nw_connections",                                           5,       0},
